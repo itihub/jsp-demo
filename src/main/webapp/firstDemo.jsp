@@ -8,11 +8,14 @@
 </head>
 <body>
 
+<c:out value="收到参数username: ${param.username}"></c:out><br>
+<c:out value="收到参数password：${param.password}"></c:out><br>
+
 <c:out value="this is our first JSTL demo"/>
 
 <%-- JSP和EL表达式 写法对比 --%>
 <%=session.getAttribute("name")%>
-<c:out value="${sessionScope.name}"></c:out>
+<c:out value="${sessionScope.name}"></c:out><br>
 
 
 <%-- emtry使用 --%>
